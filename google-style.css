@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic&subset=latin,cyrillic");
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    font-family: inherit;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.875rem;
+    margin: 0;
+    padding: 0;
+}
+
+a,
+.fa-th {
+    text-decoration: none;
+    color: #222;
+    opacity: 0.75;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*****end of reset *****/
+nav {
+    margin-top: 1.44rem;
+    font-size: 0.813rem;
+}
+
+footer {
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding: 1.2rem 0;
+}
+
+.navbar,
+.foot {
+    display: flex;
+    align-items: center;
+    margin-left: 1.6rem;
+    margin-right: 1.875rem;
+}
+
+.left {
+    margin-right: auto;
+}
+
+.navbar > li {
+    padding-right: 0.937rem;
+}
+
+.foot > li {
+    padding-right: 1.687rem;
+}
+
+.navbar > li:last-of-type,
+.foot > li:last-of-type {
+    padding-right: 0px;
+}
+
+.navbar > li > button {
+    background: #4285f4;
+    background: -webkit-linear-gradient(top, #4387fd, #4683ea);
+    background: linear-gradient(top, #4387fd, #4683ea);
+    color: #fff;
+    padding: 0.4rem 0.75rem;
+    border: 1px solid #4285f4;
+    font-weight: bold;
+    font-size: 0.813rem;
+}
+
+.navbar > li > button:hover {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.85);
+}
+
+.fa-th {
+    font-size: 1.2rem;
+}
+
+/***** main search section *****/
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 5.324rem);
+}
+
+.logo {
+    height: 6rem;
+    width: 17rem;
+    margin-bottom: 1.6rem;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search-field {
+    font-size: 1.2rem;
+    padding: 0.625rem 0.8rem 0.625rem 2.8rem;
+    border: 1px solid #e8e8e8;
+    border-radius: 25px;
+    outline: none;
+    width: 50vw;
+}
+
+.search-icon {
+    position: absolute;
+    left: 1.4rem;
+    color: #9aa0a6;
+    font-size: 0.9rem;
+}
+
+.search-field:hover {
+    box-shadow: 1px 2px 6px #c0c0c0;
+}
+.search-buttons {
+    margin-top: 2rem;
+}
+.search-buttons button:first-child {
+    margin-right: 0.4rem;
+}
+
+button[type="submit"] {
+    font-size: 0.875rem;
+    color: #5F6368;
+    background-color: #f2f2f2;
+    /*min-width: 3.375rem;
+    height: 2.25rem;*/
+    padding: 0.6rem 1rem;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+}
+
+button[type="submit"]:hover {
+    color: #000;
+    background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
+    background-image: linear-gradient(top, #f8f8f8, #f1f1f1);
+    border: 1px solid #c8c8c8;
+}
+
+.reminder {
+    margin-top: 0.75rem;
+    display: flex;
+    align-items: center;
+}
+
+.reminder > img {
+    height: 2.813rem;
+    width: 2.813rem;
+    margin-right: 0.313rem;
+}
+
+.reminder > a {
+    color: #1a0dab;
+}
+
+@media(max-width:606px) {
+    footer {
+        visibility: hidden;
+    }
+
+    /*.search-field {
+        width: 22rem;
+    }*/
+}
