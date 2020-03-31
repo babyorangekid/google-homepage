@@ -122,6 +122,7 @@ footer {
     border-radius: 25px;
     outline: none;
     width: 50vw;
+    -webkit-appearance: none;
 }
 
 .search-icon {
