@@ -1,18 +1,630 @@
 <!DOCTYPE html>
-   <html lang="en">
-    <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A mock Google search page">
     <meta name="keywords" content="web design, affordable web design, professional web design">
     <meta name="author" content="Joyce C.">
     <title>Google Search Page</title>
-    <link rel="stylesheet" href="./google-style.css">
+    <link rel="stylesheet" href="google-style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        
+
+<body class="search-page-width font14">
+    <header class="nav">
+        <div class="flex-AC-container site-L-margin site-R-margin ">
+            <a href="index.html">
+                <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="google logo" class="sm-logo">
+            </a>
+            <div class="search-container left">
+                <div class="clear-icon">
+                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+                    </svg>
+                </div>
+                <div class="R-search-icon">
+                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                    </svg>
+                </div>
+                <input class="search-field sub-search-field" type="search" placeholder="build this webpage">
+            </div>
+            <nav>
+                <ul class="flex-AC-container">
+                    <li class="flex-AC-container login-menu menu">
+                        <svg class="light-gray" focusable="false" height="24" width="24" viewBox="0 0 24 24">
+                            <path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path>
+                        </svg>
+                    </li>
+                    <li><button class="login-button menu">Sign in</button></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="navbar-border font13">
+            <ul class="submenu flex-AC-container site-R-margin">
+                <li class="current submenu-item">
+                    <a><svg class="svg-gap" width="16" height="16" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 2v2a6 6 0 0 1 6 6h2a8 8 0 0 0-8-8z" fill="#34A853"></path>
+                            <path d="M10 4V2a8 8 0 0 0-8 8h2c0-3.3 2.7-6 6-6z" fill="#EA4335"></path>
+                            <path d="M4 10H2a8 8 0 0 0 8 8v-2c-3.3 0-6-2.69-6-6z" fill="#FBBC04"></path>
+                            <path d="M22 20.59l-5.69-5.69A7.96 7.96 0 0 0 18 10h-2a6 6 0 0 1-6 6v2c1.85 0 3.52-.64 4.88-1.68l5.69 5.69L22 20.59z" fill="#4285F4"></path>
+                        </svg>
+                    </a>All
+                </li>
+                <li class="light-gray submenu-item">
+                    <a><svg class="svg-gap" width="16" height="16" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 13l4 5H6l4-4 1.79 1.78L14 13zm-6.01-2.99A2 2 0 0 0 8 6a2 2 0 0 0-.01 4.01zM22 5v14a3 3 0 0 1-3 2.99H5c-1.64 0-3-1.36-3-3V5c0-1.64 1.36-3 3-3h14c1.65 0 3 1.36 3 3zm-2.01 0a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h7v-.01h7a1 1 0 0 0 1-1V5z"></path>
+                        </svg>
+                    </a>News
+                </li>
+                <li class="light-gray submenu-item">
+                    <a><svg class="svg-gap" width="16" height="16" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.50302273,-6.81818182e-05 C10.5930227,-6.81818182e-05 13.0052955,2.48720455 13.0052955,5.42720455 C13.0052955,7.76379545 11.8748409,9.12061364 10.7443864,10.4774318 C10.2909773,11.0051591 9.83893182,11.6078864 9.38688636,12.2112955 C8.93484091,12.8140227 8.63347727,13.7187955 8.40711364,14.1708409 C8.18143182,14.6228864 8.03006818,14.9999318 7.50302273,14.9999318 C6.97461364,14.9999318 6.82461364,14.6228864 6.59825,14.1708409 C6.37188636,13.7187955 6.07052273,12.8140227 5.61847727,12.2112955 C5.16575,11.6078864 4.71370455,11.0051591 4.26165909,10.4774318 C3.13120455,9.12061364 2.00006818,7.76379545 2.00006818,5.42720455 C2.00006818,2.48720455 4.41165909,-6.81818182e-05 7.50302273,-6.81818182e-05 Z M7.50302273,1.36356818 C5.22029545,1.36356818 3.36370455,3.18606818 3.36370455,5.42720455 C3.36370455,7.27015909 4.22211364,8.29970455 5.30893182,9.60402273 C5.77734091,10.1508409 6.25120455,10.7822045 6.70938636,11.3931136 C7.04893182,11.8458409 7.30461364,12.3831136 7.50302273,12.8378864 C7.70075,12.3831136 7.95643182,11.8458409 8.29597727,11.3931136 C8.75484091,10.7822045 9.22734091,10.1508409 9.70870455,9.58970455 C10.7825682,8.29970455 11.6416591,7.27015909 11.6416591,5.42720455 C11.6416591,3.18606818 9.78438636,1.36356818 7.50302273,1.36356818 Z M7.50275,4.09793182 C8.23638636,4.09793182 8.83161364,4.69315909 8.83161364,5.42679545 C8.83161364,6.16111364 8.23638636,6.75634091 7.50275,6.75634091 C6.76843182,6.75634091 6.17320455,6.16111364 6.17320455,5.42679545 C6.17320455,4.69315909 6.76843182,4.09793182 7.50275,4.09793182 Z"></path>
+                        </svg>
+                    </a>Maps
+                </li>
+                <li class="light-gray submenu-item">
+                    <a><svg class="svg-gap" width="16" height="16" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path clip-rule="evenodd" d="M10 16.5l6-4.5-6-4.5v9zM5 20h14a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1zm14.5 2H5a3 3 0 0 1-3-3V4.4A2.4 2.4 0 0 1 4.4 2h15.2A2.4 2.4 0 0 1 22 4.4v15.1a2.5 2.5 0 0 1-2.5 2.5z" fill-rule="evenodd"></path>
+                        </svg>
+                    </a>Videos
+                </li>
+                <li class="light-gray submenu-item">
+                    <a><svg class="svg-gap" width="16" height="16" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.11 2.89A3.02 3.02 0 0 0 18.95 2h-5.8c-.81 0-1.58.31-2.16.89L7.25 6.63 2.9 10.98a3.06 3.06 0 0 0 0 4.32l5.79 5.8a3.05 3.05 0 0 0 4.32.01l8.09-8.1c.58-.58.9-1.34.9-2.16v-5.8c0-.81-.32-1.59-.89-2.16zM20 10.85c0 .28-.12.54-.32.74l-3.73 3.74-4.36 4.36c-.41.41-1.08.41-1.49 0l-2.89-2.9-2.9-2.9a1.06 1.06 0 0 1 0-1.49l8.1-8.1c.2-.2.46-.3.74-.3l5.8-.01A1.05 1.05 0 0 1 20 5.05v5.8zM16 6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2z"></path>
+                        </svg>
+                    </a>Shopping
+                </li>
+                <li class="light-gray submenu-item">
+                    <a><svg class="svg-gap" width="16" height="16" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+                        </svg>
+                    </a>More
+                </li>
+                <li class="menu-right light-gray submenu-item">Settings</li>
+                <li class="left light-gray submenu-item submenu-btn">Tools</li>
+                <li class="light-gray  submenu-item last-item">SafeSearch on</li>
+            </ul>
+        </div>
     </header>
+    <main>
+        <div class="wrapper site-container search-time light-gray">About 117,000,000 results (0.52 seconds)</div>
+        <section class="wrapper site-container search-meta">
+            <article class="result-list">
+                <a href="#" target="_blank" class="noline result-url"><b>Ad ·</b> www.wix.com/<span class="light-gray"><svg width="12" height="12" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1408 1088q0 26-19 45l-448 448q-19 19-45 19t-45-19l-448-448q-19-19-19-45t19-45 45-19h896q26 0 45 19t19 45z" /></svg></span>
+                </a>
+                <h3 class="result-title upper"><a href="#" target="_blank" class="external-link">how to build your own website | it's esy with wix.com</a></h3>
+                <p><b class="light-gray">Building</b> Websites Has Never Been Easier. Use Drag &amp; Drop Tools to Add Site Elements. Go Live Online with Free <b class="light-gray">Web</b> Hosting. Manage any Changes with a Few Clicks. Get Started! Social media compatible. Easy-to-add blog. 24/7 support center. Free <b class="light-gray">website</b> builder.</p>
+                <ul class="flex-AC-container add-links">
+                    <li><a href="#" target="_blank" class="external-link">Product Features</a></li>
+                    <li><a href="#" target="_blank" class="external-link">Wix Playground</a></li>
+                    <li><a href="#" target="_blank" class="external-link">Explore Applications</a></li>
+                    <li><a href="#" target="_blank" class="external-link">Browse Features</a></li>
+                    <li><a href="#" target="_blank" class="external-link">Wix Websites</a></li>
+                </ul>
+            </article>
+            <article class="result-list">
+                <a href="#" target="_blank" class="noline result-url">victor-lf.github.io <span class="light-gray">› google-search-results
+                        <svg width="12" height="12" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1408 1088q0 26-19 45l-448 448q-19 19-45 19t-45-19l-448-448q-19-19-19-45t19-45 45-19h896q26 0 45 19t19 45z" /></svg></span>
+                </a>
+                <h3 class="result-title"><a href="#" target="_blank" class="external-link">build this webpage - GitHub Pages</a></h3>
+                <p><b class="light-gray">build this webpage.</b> https://benjdelt.github.io/google-results/. With zero coding experience, artist building 180 webpages in 180 days ...</p>
+            </article>
+            <article class="result-list">
+                <a href="#" target="_blank" class="noline result-url">christine-27.github.io <span class="light-gray">› google-homepage<svg width="12" height="12" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1408 1088q0 26-19 45l-448 448q-19 19-45 19t-45-19l-448-448q-19-19-19-45t19-45 45-19h896q26 0 45 19t19 45z" /></svg></span>
+                </a>
+                <h3 class="result-title"><a href="#" target="_blank" class="external-link">build this webpage - GitHub Pages</a></h3>
+                <p>TO CREATE A <b class="light-gray">WEBSITE</b> WITH WORDPRESS (OR JOOMLA &amp; DRUPAL), USE ONE CLICK INSTALLATION: 1. Log in to your hosting account. 2. Go to your ...</p>
+            </article>
+            <article class="result-list">
+                <a href="#" target="_blank" class="noline result-url">arstechnica.com <span class="light-gray">› information-technology › 2013/07 › with-zero-cod...
+                        <svg width="12" height="12" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1408 1088q0 26-19 45l-448 448q-19 19-45 19t-45-19l-448-448q-19-19-19-45t19-45 45-19h896q26 0 45 19t19 45z" /></svg></span>
+                </a>
+                <h3 class="result-title"><a href="#" target="_blank" class="external-link">With zero coding experience, artist building 180 webpages in ...</a></h3>
+                <p><span class="datetime">Jul 26, 2013 - </span>One of Jennifer Dewalt's creations, this <b class="light-gray">webpage</b> lets visitors create paintings in ... <b class="light-gray">Build</b> a different <b class="light-gray">website</b> every day for 180 consecutive days.</p>
+            </article>
+            <article class="result-list">
+                <a href="#" target="_blank" class="noline result-url">www.websitebuilderexpert.com <span class="light-gray">› building-websites
+                        <svg width="12" height="12" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1408 1088q0 26-19 45l-448 448q-19 19-45 19t-45-19l-448-448q-19-19-19-45t19-45 45-19h896q26 0 45 19t19 45z" /></svg></span>
+                </a>
+                <h3 class="result-title"><a href="#" target="_blank" class="external-link">How to Build a Website: the Step-by-Step</a></h3>
+                <p><span class="datetime">7 days ago - </span>Not sure how to <b class="light-gray">build a website</b>? It actually is not that hard. You don't have to be technical at all. With our handy guide, you can get started ...</p>
+            </article>
+            <article class="result-list">
+                <a href="#" target="_blank" class="noline result-url">www.squarespace.com
+                    <span class="light-gray"><svg width="12" height="12" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1408 1088q0 26-19 45l-448 448q-19 19-45 19t-45-19l-448-448q-19-19-19-45t19-45 45-19h896q26 0 45 19t19 45z" /></svg></span>
+                </a>
+                <h3 class="result-title"><a href="#" target="_blank" class="external-link">Squarespace Build a Website – Website Builder</a></h3>
+                <p>Squarespace is the all-in-one solution for anyone looking to create a beautiful <b class="light-gray">website</b>. Domains, eCommerce, hosting, galleries, analytics, and 24/7 support all ...</p>
+                <ul class="flex-AC-container add-links">
+                    <li><a href="#" target="_blank" class="external-link">Overview</a></li>
+                    <li><a href="#" target="_blank" class="external-link">Ecommerce Templates</a></li>
+                    <li><a href="#" target="_blank" class="external-link">Sell Products</a></li>
+                    <li><a href="#" target="_blank" class="external-link">Sell Services</a></li>
+                </ul>
+            </article>
+        </section>
+        <!-- Accordion -->
+        <aside class="wrapper site-container accordion-border">
+            <h3 class="result-title sq3-title padding-L-16">People also ask</h3>
+            <!-- Q1 -->
+            <div class="accordion1">
+                <input type="checkbox" id="extra-qs101">
+                <label for="extra-qs101" class="panel accordion1-Qs padding-L-16 drop">How can I create my own webpage?</label>
+                <div class="accordion-ans padding-L-16">
+                    <p><b>Follow these 6 simple steps to create a website today.</b></p>
+                    <ol class="padding-L-16 padding-R-16 search-foot">
+                        <li>Sign up for a free website builder. Choose what kind of website you want to create.</li>
+                        <li>Customize a template or get a website made for you. ...</li>
+                        <li>Drag and drop 100s of design features</li>
+                        <li>Get ready for business. ...</li>
+                        <li>Publish your website and go live. ...</li>
+                        <li>Drive traffic to your site.</li>
+                    </ol>
+                    <div class="accordion-links">
+                        <a href="#" target="_blank" class="noline result-url font14">www.wix.com</a>
+                        <h3 class="result-title result-title-H"><a href="#" target="_blank" class="external-link">Wix.com: Free Website Builder | Create a Free Website</a></h3>
+                    </div>
+                    <div>
+                        <p>Search for: <a href="#" target="_blank" class="external-link">How can I create my own webpage?</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- end of Q1 -->
+            <!-- Q2 -->
+            <div class="accordion1">
+                <input type="checkbox" id="extra-qs102">
+                <label for="extra-qs102" class="panel accordion1-Qs padding-L-16 drop">What makes a good website layout?</label>
+                <div class="accordion-ans padding-L-16">
+                    <p><b>Here is the list of 8-good design principles which will make your website aesthetic, user-friendly, effective, and engaging:</b></p>
+                    <ul class="padding-L-16 with-bullets search-foot">
+                        <li>Simple is the Best. The over-designed website may not work. ...</li>
+                        <li>Consistency. ...</li>
+                        <li>Typography &amp; Readability. ...</li>
+                        <li>Mobile Compatibility. ...</li>
+                        <li>Color Palette andd Imagery. ...</li>
+                        <li>Easy Loading. ...</li>
+                        <li>Easy Navigation. ...</li>
+                        <li>Communication</li>
+                    </ul>
+                    <div class="datetime padding-L-16 font12 feedback">Jun 26, 2018</div>
+                    <div class="accordion-links">
+                        <a href="#" target="_blank" class="noline result-url font14">wpastra.com <span class="light-gray">› good-website-design</span></a>
+                        <h3 class="result-title result-title-H"><a href="#" target="_blank" class="external-link">8 Principles of Good Website Design - Astra</a></h3>
+                    </div>
+                    <div>
+                        <p>Search for: <a href="#" target="_blank" class="external-link">What makes a good website layout?</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- end of Q2 -->
+            <!-- Q3 -->
+            <div class="accordion1">
+                <input type="checkbox" id="extra-qs103">
+                <label for="extra-qs103" class="panel accordion1-Qs padding-L-16 drop">How much does it cost to develop a website?</label>
+                <div class="accordion-ans padding-L-16 padding-R-16">
+                    <p>Depending on your needs, <b>building a website</b> can <b>cost</b> anywhere between $100 and $500. I fyou need a feature-rich, custom-built <b>website</b>, it can go as high as $30,000 or more. To <b>build</b> a small <b>website</b>, you'll need to have a budget for the domain name and web hosting. <span class="datetime font12">Jan 3, 2020</span></p>
+                    <div class="accordion-links">
+                        <a href="#" target="_blank" class="noline result-url font14">www.isitwp.com <span class="light-gray">› how-much-does-it-cost-to-build-a-website-expert-ans...</span></a>
+                        <h3 class="result-title result-title-H"><a href="#" target="_blank" class="external-link">How Much Does It REALLY Cost to Build a Website? (Expert Answer)</a></h3>
+                    </div>
+                    <div>
+                        <p>Search for: <a href="#" target="_blank" class="external-link">How much does it cost to develop a website?</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- end of Q3 -->
+            <!-- Q4 -->
+            <div class="accordion1">
+                <input type="checkbox" id="extra-qs104">
+                <label for="extra-qs104" class="panel accordion1-Qs padding-L-16 drop">How do I make a great website?</label>
+
+                <div class="accordion-ans padding-L-16">
+                    <p><b>The 22 Habits of Successful DIY Websites</b></p>
+                    <ol class="padding-L-16 search-foot">
+                        <li>Start with a goal for your sebsite. ...</li>
+                        <li>Find inspiration from those who have gone before. ...</li>
+                        <li>Think about who your audience is. ...</li>
+                        <li>Take the time to create a site plan. ...</li>
+                        <li>Make your navigation menu fit on one line. ...</li>
+                        <li>Fill in your SEO settings. ...</li>
+                        <li>Invest in your own domain name.</li>
+                    </ol>
+                    <div class="feedback"><a href="#" target="_blank" class="external-link padding-L-16 font14">More Items...</a><span class="datetime font12"> • Feb 7, 2017</span></div>
+                    <div class="accordion-links">
+                        <a href="#" target="_blank" class="noline result-url font14">www.jimdo.com <span class="light-gray">› blog › 22-tips-for-building-a-diy-website</span></a>
+                        <h3 class="result-title result-title-H"><a href="#" target="_blank" class="external-link">22 Tips for Building a DIY Website | Jimdo</a></h3>
+                    </div>
+                    <div>
+                        <p>Search for: <a href="#" target="_blank" class="external-link">How do I make a great website?</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- end of Q4 -->
+            <!-- Q5 -->
+            <div class="accordion1">
+                <input type="checkbox" id="extra-qs105">
+                <label for="extra-qs105" class="panel accordion1-Qs padding-L-16 drop">How does a website work?</label>
+
+                <div class="accordion-ans padding-L-16 padding-R-16">
+                    <p>A <b>Website</b> is simply a collection of web pages of codes – codes that describes the layout, format and content on a page. The web server is a internet-connected computer that receives the request for a web page sent by your browser. The browser connects your computer to the server through an IP address.</p>
+
+                    <div class="accordion-links">
+                        <a href="#" target="_blank" class="noline result-url font14">www.doteasy.com <span class="light-gray">› domain-email-and-website-hosting-articles › how-d...</span></a>
+                        <h3 class="result-title result-title-H"><a href="#" target="_blank" class="external-link">How do websites work? | Doteasy</a></h3>
+                    </div>
+                    <div>
+                        <p>Search for: <a href="#" target="_blank" class="external-link">How does a webpage work?</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- end of Q5 -->
+            <!-- Q6 -->
+            <div class="accordion1">
+                <input type="checkbox" id="extra-qs106">
+                <label for="extra-qs106" class="panel accordion1-Qs padding-L-16 drop">Does Google have a website builder?</label>
+
+                <div class="accordion-ans padding-L-16 padding-R-16">
+                    <p><b>Google</b> has officially released a single-page <b>website builder</b> designed for small business. The new tool, simply called "<b>Website</b>", is free and promises to allow small business owners to create and edit <b>websites</b> in minutes on wither desktop or mobile. <span class="datetime font12">Jun 13, 2017</span></p>
+
+                    <div class="accordion-links">
+                        <a href="#" target="_blank" class="noline result-url font14">www.searchenginejournal.com <span class="light-gray">› google-releases-website-builder-small-...</span></a>
+                        <h3 class="result-title result-title-H"><a href="#" target="_blank" class="external-link">Google Releases A Website Builder for Small Businesses - Search ...</a></h3>
+                    </div>
+                    <div>
+                        <p>Search for: <a href="#" target="_blank" class="external-link">Does Google have a website builder?</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- end of Q6 -->
+            <!-- Q7 -->
+            <div class="accordion1">
+                <input type="checkbox" id="extra-qs107">
+                <label for="extra-qs107" class="panel accordion1-Qs padding-L-16 drop">How long does it take to code a website?</label>
+
+                <div class="accordion-ans padding-L-16 padding-R-16">
+                    <p>A typlical <b>website</b> will <b>take</b> 14 weeks at a minimum from start to launch. This includes 3 weeks discovery, 6 weeks design, 3 weeks initial development, and 2 weeks of modifications. It could <b>take</b> much longer if you wait until the end to start writing content. <span class="datetime font12">Feb 22, 2016</span></p>
+
+                    <div class="accordion-links">
+                        <a href="#" target="_blank" class="noline result-url font14">www.billerickson.net <span class="light-gray">› how-long-does-it-take-to-build-a-website</span></a>
+                        <h3 class="result-title result-title-H"><a href="#" target="_blank" class="external-link">How long does it take to build a website? - Bill Erickson</a></h3>
+                    </div>
+                    <div>
+                        <p>Search for: <a href="#" target="_blank" class="external-link">How long does it take to code a website?</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- end of Q7 -->
+            <!-- Q8 -->
+            <div class="accordion1">
+                <input type="checkbox" id="extra-qs108">
+                <label for="extra-qs108" class="panel accordion1-Qs padding-L-16 drop">How much should a website cost in 2019?</label>
+
+                <div class="accordion-ans padding-L-16 padding-R-16">
+                    <p>Average <b>Website Cost in 2019...</b></p>
+                    <p>These factors widen the range of the average <b>website</b> price from potentially a few thousand dollars for minimal barebones sites to $5,000 or even $30,000 for custom, feature-rich and responsive web applications. <span class="datetime font12">Sep 25, 2018</span></p>
+
+                    <div class="accordion-links">
+                        <a href="#" target="_blank" class="noline result-url font14">spiralscout.com <span class="light-gray">› blog › how-much-does-a-website-cost-in-2019</span></a>
+                        <h3 class="result-title result-title-H"><a href="#" target="_blank" class="external-link">What is the Average Cost of Website Development in 2019?</a></h3>
+                    </div>
+                    <div>
+                        <p>Search for: <a href="#" target="_blank" class="external-link">How much should a website cost in 2019?</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- end of Q8 -->
+            <!-- Q9 -->
+            <div class="accordion1">
+                <input type="checkbox" id="extra-qs109">
+                <label for="extra-qs109" class="panel accordion1-Qs padding-L-16 drop">Is Wix really free?</label>
+
+                <div class="accordion-ans padding-L-16 padding-R-16">
+                    <p><b>Wix</b> is available for <b>free</b> for as long as you want. If you need professional features like your own domain name or ecommerce, you must choose from one of their premium plans ranging from "Combo" to "Business VIP".</p>
+
+                    <div class="accordion-links">
+                        <a href="#" target="_blank" class="noline result-url font14">www.websitetooltester.com <span class="light-gray">› reviews › wix-review</span></a>
+                        <h3 class="result-title result-title-H"><a href="#" target="_blank" class="external-link">Wix Review 2020: When (and when not) to use Wix!</a></h3>
+                    </div>
+                    <div>
+                        <p>Search for: <a href="#" target="_blank" class="external-link">Is Wix really free?</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- end of Q9 -->
+            <!-- Q10 -->
+            <div class="accordion1">
+                <input type="checkbox" id="extra-qs110">
+                <label for="extra-qs110" class="panel accordion1-Qs padding-L-16 drop">How can I download an entire website?</label>
+
+                <div class="accordion-ans padding-L-16">
+                    <p><b>How to Download an Entire Website With WebCopy</b></p>
+                    <ol class="padding-L-16 search-foot">
+                        <li>Install and launch the app.</li>
+                        <li>Navigate to File > New to create a new project.</li>
+                        <li>Type the URL into the Website field.</li>
+                        <li>Change the Save folder field to where you want the site saved.</li>
+                        <li>Play around with Project > Rules... ...</li>
+                        <li>Navigate to File > Save As... to save the project.</li>
+                    </ol>
+                    <div class="external-link feedback"><a href="#" target="_blank" class="external-link padding-L-16 font14">More items...</a></div>
+                    <div class="accordion-links">
+                        <a href="#" target="_blank" class="noline result-url font14">www.makeuseof.com <span class="light-gray">› tag › how-do-i-download-an-entire-website-for-...</span></a>
+                        <h3 class="result-title result-title-H"><a href="#" target="_blank" class="external-link">How to Download an Entire Website for Offline Reading - MakeUseOf</a></h3>
+                    </div>
+                    <div>
+                        <p>Search for: <a href="#" target="_blank" class="external-link">How can I download an entire website?</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- end of Q10 -->
+        </aside>
+        <div class="flex-AC-container wrapper site-container right"><a href="#" target="_blank" class=" datetime feedback font12"><i>Feedback</i></a></div>
+        <!-- end of accordion -->
+        <section class="wrapper site-container extra-top search-meta">
+            <article class="result-list">
+                <a href="#" target="_blank" class="noline">websitesetup.org
+                    <span class="light-gray"><svg width="12" height="12" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1408 1088q0 26-19 45l-448 448q-19 19-45 19t-45-19l-448-448q-19-19-19-45t19-45 45-19h896q26 0 45 19t19 45z" /></svg></span>
+                </a>
+                <h3 class="result-title"><a href="#" target="_blank" class="external-link">How to Create a Website: the Step-by-Step Guide for Beginenrs ...</a></h3>
+                <p>Learn how to make a <b class="light-gray">website</b> and set it up. This site contains different tutorials on how to <b class="light-gray">build</b> a <b class="light-gray">website</b> using WordPress, Joomla, Drupal &amp; HTML.</p>
+            </article>
+            <article class="result-list">
+                <a href="#" target="_blank" class="noline">www.buildthis.io <span class="light-gray">› make-a-website
+                        <svg width="12" height="12" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1408 1088q0 26-19 45l-448 448q-19 19-45 19t-45-19l-448-448q-19-19-19-45t19-45 45-19h896q26 0 45 19t19 45z" /></svg></span>
+                </a>
+                <h3 class="result-title"><a href="#" target="_blank" class="external-link">How to Build A Website: A-to-Z Beginner Guide - BuildThis.io</a></h3>
+                <p><span class="datetime">Mar 10, 2020 - </span>In this article, I will show you the essential steps in creating a <b class="light-gray">website</b>. Register a domain name; Signup for a web hosting; Design your <b class="light-gray">webpage</b> ...</p>
+            </article>
+        </section>
+        <!-- borderless accordion -->
+        <aside class="wrapper site-container accordion2-bottom">
+            <!-- Q1 -->
+            <div class="accordion2">
+                <input type="checkbox" id="extra-qs201">
+                <label for="extra-qs201" class="panel accordion2-Qs drop">Can you make your own website for free?</label>
+                <div class="ans-background">
+                    <p>You can create a free website by using <a href="#" target="_blank" class="external-link">free web hosting</a> like 000Webhost offers or by using a free plan offered by some website builders. For example, Wix offers a free plan with limited resources that is suitable for small, low-volume websites.</p>
+                </div>
+            </div>
+            <!-- end of Q1 -->
+            <!-- Q2 -->
+            <div class="accordion2">
+                <input type="checkbox" id="extra-qs202">
+                <label for="extra-qs202" class="panel accordion2-Qs drop">How do I create a website for my business?</label>
+                <div class="ans-background">
+                    <p>Website builders are an ideal way for samll businesses to create their own websites without the need to outsource. These options don't require technical knowledge and often offer pre-designed templates which can be useful > <a href="#" target="_blank" class="external-link">Click here to begin.</a></p>
+                </div>
+            </div>
+            <!-- end of Q2 -->
+            <!-- Q3 -->
+            <div class="accordion2">
+                <input type="checkbox" id="extra-qs203">
+                <label for="extra-qs203" class="panel accordion2-Qs drop">What is the best website builder?</label>
+                <div class="ans-background">
+                    <p>"Best" is a subjective term - what's best for us might not be right for you. In term of popularity - <a href="#" target="_blank" class="external-link">Squarespace</a> is the most popular website builder with 22% market share. They are followed by Wix and GoDaddy's GoCentral at second and third plae respectively.</p>
+                </div>
+            </div>
+            <!-- end of Q3 -->
+            <!-- CSS only show more/less toggle effect -->
+            <div class="toggle">
+                <input type="checkbox" id="check_id">
+                <label for="check_id" class="panel accordion2-Qs toggle-show"></label>
+                <!-- Q4 -->
+                <div class="accordion2">
+                    <input type="checkbox" id="extra-qs204">
+                    <label for="extra-qs204" class="panel accordion2-Qs drop">Can I create a website on Google?</label>
+                    <div class="ans-background">
+                        <p>Google offers a sitebuilder as part of its G Suite range of products. Prices start from $5.40/user/month.</p>
+                    </div>
+                </div>
+                <!-- end of Q4 -->
+                <!-- Q5 -->
+                <div class="accordion2">
+                    <input type="checkbox" id="extra-qs205">
+                    <label for="extra-qs205" class="panel accordion2-Qs drop">How do I create a PDF from a website?</label>
+                    <div class="ans-background">
+                        <p>If you have adobe reader installed on your computer, you can create a PDF from a web page bt pressing CTRL-P. From the print menu that opens, select output to PDF and then save the file.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end of Q5 -->
+            <!-- end of toggle effect -->
+        </aside>
+        <!-- end of borderless accordion -->
+        <section class="wrapper site-container search-meta">
+            <article class="result-list">
+                <a href="#" target="_blank" class="noline">makeawebsitehub.com
+                    <span class="light-gray"><svg width="12" height="12" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1408 1088q0 26-19 45l-448 448q-19 19-45 19t-45-19l-448-448q-19-19-19-45t19-45 45-19h896q26 0 45 19t19 45z" /></svg></span>
+                </a>
+                <h3 class="result-title"><a href="#" target="_blank" class="external-link">How to Make a Website in 2020 - Free Easy Guide to Building ...</a></h3>
+                <p><span class="datetime">Jan 1, 2020 - </span>This site teaches you how to make a <b class="light-gray">website</b> in just 3 easy to follow steps. There's also lots of really useful resources to help you <b class="light-gray">build</b> traffic in ...</p>
+            </article>
+            <article class="result-list">
+                <a href="#" target="_blank" class="noline">www.pcmag.com <span class="light-gray">› ... › Website &amp; App Building Tools › Web Hosting
+                        <svg width="12" height="12" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1408 1088q0 26-19 45l-448 448q-19 19-45 19t-45-19l-448-448q-19-19-19-45t19-45 45-19h896q26 0 45 19t19 45z" /></svg></span>
+                </a>
+                <h3 class="result-title"><a href="#" target="_blank" class="external-link">How to Create a Website | PCMag</a></h3>
+                <p>If you need to quickly <b class="light-gray">build</b> a simple <b class="light-gray">website</b>, starting with a blogging service is a great way to go. The major player in the blog game is WordPress, a content ...</p>
+            </article>
+            <article class="result-list">
+                <a href="#" target="_blank" class="noline">www.wix.com
+                    <span class="light-gray"><svg width="12" height="12" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1408 1088q0 26-19 45l-448 448q-19 19-45 19t-45-19l-448-448q-19-19-19-45t19-45 45-19h896q26 0 45 19t19 45z" /></svg></span>
+                </a>
+                <h3 class="result-title"><a href="#" target="_blank" class="external-link">Wix.com: Free Website Builder | Create a Free Website</a></h3>
+                <p>Choose a stunning template and customize anything with the Wix <b class="light-gray">Website</b> builder –no coding ... Design your own professional logo and <b class="light-gray">build</b> your brand online.</p>
+            </article>
+        </section>
+        <!-- carousel row-->
+        <aside class="bg-wrapper site-container related-search1 accordion-border">
+            <p class="datetime related-search-padding">Related Search</p>
+            <div class="related-heading">
+                <h3 class="result-title left">Free website builders</h3>
+                <a href="#" target="_blank" class="datetime">View 3+ more</a>
+            </div>
+            <div class="related-links">
+                <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB3lhsawhBaWDkCnals-Lkn3Xjx9fStVEvCiovNLKoTJ3YrEQMzcLJAH06kYNhPWdINnQ&s=0" alt="WordPress">
+                    <figcaption><a href="#" target="_blank" class="external-link">WordPress</a></figcaption>
+                </figure>
+                <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSru8EJWRTiSHhqP9exwbt0Y7F6R2WjgYQl-Zjo05Bq1WbVziq8tVaGtYPjkgpXy__2myU&s=0" alt="GoDaddy">
+                    <figcaption><a href="#" target="_blank" class="external-link">GoDaddy</a></figcaption>
+                </figure>
+                <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxBnZvh7rFgOeGs2XXIKIZnDfkLW-G66gze0Q_pUi2IR2K_TztQqdrP_XCSyxmYpZgn40&s=0">
+                    <figcaption><a href="#" target="_blank" class="external-link">Weebly</a></figcaption>
+                </figure>
+                <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlPKkqY6fj1q5jSzKcd24v99Mg8V2VYp284C0v8YdsJcP939axSFLbpbr0HmPus96t_kg&s=0">
+                    <figcaption><a href="#" target="_blank" class="external-link">Jimdo</a></figcaption>
+                </figure>
+                <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWCXFQcPIcyP1kJKarMsNETajTjPP0cDg-hK38oV38FMDMie1mmDe0QVokcVx3MRe5A7w&s=0">
+                    <figcaption><a href="#" target="_blank" class="external-link">Webnode</a></figcaption>
+                </figure>
+                <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQenR9aOtTb6smaCX4vPJXJK8DOVRTajJyvPGF4Dcia8QiQc7UXA0A&s=0">
+                    <figcaption><a href="#" target="_blank" class="external-link">Webs</a></figcaption>
+                </figure>
+                <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZUuETY-E39eNRIQ90l7fS8-Fa2o-0nhOkWq78hnfY3HFVsbiEaQk&s=0">
+                    <figcaption><a href="#" target="_blank" class="external-link">IM Creator</a></figcaption>
+                </figure>
+            </div>
+        </aside>
+        <aside class="bg-wrapper site-container related-search1 accordion-border">
+            <p class="datetime related-search-padding">Related Search</p>
+            <div class="related-heading">
+                <h3 class="result-title left">Top web designing softwares</h3>
+                <a href="#" target="_blank" class="datetime">View 3+ more</a>
+            </div>
+            <div class="related-links">
+                <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqLwpEePM8f_G4QYjHydsYQr63bABYlCW96U0gtZL2bJIjrrTsfOY&s=0" alt="Mobirise">
+                    <figcaption><a href="#" target="_blank" class="external-link">Mobirise</a></figcaption>
+                </figure>
+                <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXeyYYn3f5KAAliJlygWL4LELumXr3V_3KUBAyx2uneRA4TBro4m0bbZ4iMLxF39ZdEA&s=0" alt="Webflow">
+                    <figcaption><a href="#" target="_blank" class="external-link">Webflow</a></figcaption>
+                </figure>
+                <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRb30vz6jXDxBiGAZ-qY7g28GhhvSNvlyb9Wln_36pNQP91a-ignZFpJ1hPMzwQvgw2nY&s=0" alt="google web designer">
+                    <figcaption><a href="#" target="_blank" class="external-link">Google Web Designer</a></figcaption>
+                </figure>
+                <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqlAedY9n03cQitgEGZkV788CtkQT5_IEvn2FmhgH5oAhGJTYrqe2CxMjK_TDpWsafElI&s=0" alt="Adobe Dreamweaver">
+                    <figcaption><a href="#" target="_blank" class="external-link">Adobe Dreamwe...</a></figcaption>
+                </figure>
+                <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS67Prf7rIr3MSHq055j3SWhTrLkZ6ghtd3ll6TOihj2aKtisY6x0m_aemVm2EPCrjdv6Y2&s=0" alt="HTML editor">
+                    <figcaption><a href="#" target="_blank" class="external-link">HTML editor</a></figcaption>
+                </figure>
+                <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIfD32rrygUNGTG33DRJahSWvJ5es_rETYNI6gRgVKPpKtVvLq-3I&s=0" alt="Freeway">
+                    <figcaption><a href="#" target="_blank" class="external-link">Freeway</a></figcaption>
+                </figure>
+                <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5ysEmnrjc6nT3Pa0JTk-MKs5sCsZuTiSW_Q5-RvSeZa97m_LzcxDWAF-7Kes5p5G5EzQ&s=0" alt="Adobe Muse">
+                    <figcaption><a href="#" target="_blank" class="external-link">Adobe Muse</a></figcaption>
+                </figure>
+            </div>
+        </aside>
+
+        <div class="flex-AC-container bg-wrapper site-container right"><a href="#" target="_blank" class="datetime feedback font12"><i>Feedback</i></a></div>
+        <!-- end of carousel -->
+        <!-- searches related to build this webpage -->
+        <div class="wrapper site-container extra-top">
+            <h3 class="result-title">Searches related to build this webpage</h3>
+            <div class="extra-top half">
+                <a href="#" target="_blank" class="external-link item"><b>website</b></a>
+                <a href="#" target="_blank" class="external-link item-a">build <b>a custom website</b></a>
+                <a href="#" target="_blank" class="external-link item"><b>how to create a website pdf</b></a>
+                <a href="#" target="_blank" class="external-link item-a"><b>how to</b> build <b>a good website</b></a>
+                <a href="#" target="_blank" class="external-link item"><b>ways to</b> build <b>a website</b></a>
+                <a href="#" target="_blank" class="external-link item-a"><b>how to</b> build <b>a website for a client</b></a>
+                <a href="#" target="_blank" class="external-link item"><b>learn to</b> build <b>a website</b></a>
+                <a href="#" target="_blank" class="external-link item-a"><b>how to</b> build <b>an interactive website from scratch</b></a>
+            </div>
+        </div>
+        <!-- end of searches related to build this webpage -->
+        <div class="wrapper site-container page-nav">
+            <div class="big-G">G</div>
+            <a class="page">
+                <div class="red-O alphabet">O</div>
+                <div class="selected pagenum">1</div>
+            </a>
+            <a href="#" class="page">
+                <div class="yellow-O alphabet">O</div>
+                <div class="not-selected pagenum">2</div>
+            </a>
+            <a href="#" class="page">
+                <div class="yellow-O alphabet">O</div>
+                <div class="not-selected pagenum">3</div>
+            </a>
+            <a href="#" class="page">
+                <div class="yellow-O alphabet">O</div>
+                <div class="not-selected pagenum">4</div>
+            </a>
+            <a href="#" class="page">
+                <div class="yellow-O alphabet">O</div>
+                <div class="not-selected pagenum">5</div>
+            </a>
+            <a href="#" class="page">
+                <div class="yellow-O alphabet">O</div>
+                <div class="not-selected pagenum">6</div>
+            </a>
+            <a href="#" class="page">
+                <div class="yellow-O alphabet">O</div>
+                <div class="not-selected pagenum">7</div>
+            </a>
+            <a href="#" class="page">
+                <div class="yellow-O alphabet">O</div>
+                <div class="not-selected pagenum">8</div>
+            </a>
+            <a href="#" class="page">
+                <div class="yellow-O alphabet">O</div>
+                <div class="not-selected pagenum">9</div>
+            </a>
+            <a href="#" class="page">
+                <div class="yellow-O alphabet">O</div>
+                <div class="not-selected pagenum">10</div>
+            </a>
+            <div class="small-G alphabet">g</div>
+            <div class="green-L alphabet">l</div>
+            <div class="red-E alphabet">e</div>
+            <a href="#" class="page">
+                <svg class="blue-arrow alphabet" width="22" height="22" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1171 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z" /></svg>
+                <div class="not-selected pagenum">Next</div>
+            </a>
+        </div>
+    </main>
+    <footer class="footer search-footer light-gray">
+        <div class="site-container">
+            <p><span class="circle"></span><b class="location">San Diego, CA</b> - From your Internet address - <a href="#" class="light-gray noline darker">Use precise location</a> - <a href="#" class="light-gray noline darker">Learn more</a></p>
+            <ul class="flex-AC-container search-foot">
+                <li><a href="#" class="light-gray noline list-R-padding darker">Help</a></li>
+                <li><a href="#" class="light-gray noline list-R-padding darker">Send feedback</a></li>
+                <li><a href="#" class="light-gray noline list-R-padding darker">Privacy</a></li>
+                <li><a href="#" class="light-gray noline list-R-padding darker">Terms</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
+
 </html>
